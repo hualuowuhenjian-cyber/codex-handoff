@@ -38,7 +38,7 @@ node --test tests/handoff.test.cjs
 从已提交的技能目录生成安装包。解压后的顶层目录为 `handoff/`，其中包含技能入口、辅助脚本和许可证。
 
 ```sh
-git archive --format=zip --output=handoff.zip HEAD:skills
+git -c core.autocrlf=false archive --format=zip --output=handoff.zip HEAD:skills
 ```
 
 本项目采用 [MIT 许可证](LICENSE)。
